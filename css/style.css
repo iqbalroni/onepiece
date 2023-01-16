@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.link {
+  color: #fff;
+}
+
+@font-face {
+  font-family: pops;
+  src: url(../font/Poppins.ttf);
+}
+
+body {
+  font-family: "pops";
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.goto {
+  position: absolute;
+  left: 0%;
+  bottom: 18%;
+  z-index: 7;
+  transform: rotate(-90deg);
+}
+
+.goto h3 {
+  font-weight: 600;
+}
+
+.banner a {
+  color: #212529;
+}
+
+.goto .back {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 7px 12px;
+  border: 4px solid #212529;
+}
+
+.navbar {
+  background-color: transparent;
+  color: #fff;
+  z-index: 10;
+}
+header.nav-fixed {
+  width: 100%;
+  position: fixed;
+  transition: 1s ease-in-out;
+}
+
+.nav-active {
+  background-color: #fff;
+}
+.navbar .navbar-brand {
+  color: #a92324;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.navbar .nav-link {
+  color: #212529;
+  font-weight: 600;
+}
+.navbar .active {
+  position: relative;
+  z-index: 5;
+}
+.navbar .active::before {
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: 16px;
+  border-radius: 20px;
+  left: 0;
+  background-color: #f1aa2f;
+}
+
+.banner .jumbotron {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  background-color: white;
+}
+
+.banner::before {
+  content: "LUFFY";
+  font-size: 12em;
+  position: absolute;
+  top: 20%;
+  right: 38%;
+  color: #f0f0f1;
+  font-weight: 700;
+  letter-spacing: -10px;
+  z-index: 4;
+}
+
+.banner .leg {
+  color: #a92324;
+}
+
+/* .banner::after {
+  content: "";
+  width: 100%;
+  transform: rotate(20deg);
+  height: 90vh;
+  background-color: #a92324;
+  position: absolute;
+  bottom: -74%;
+  left: -23%;
+  z-index: 3;
+} */
+
+.banner .audio {
+  width: 70%;
+  height: 20vh;
+  background-color: #f0f0f1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+}
+
+.banner .text {
+  width: 50%;
+  position: relative;
+  z-index: 5;
+}
+
+.banner .luffy {
+  position: absolute;
+  width: 28%;
+  bottom: -150px;
+  right: 21%;
+  z-index: 5;
+}
+
+.banner h1 {
+  font-weight: 700;
+  line-height: 60px;
+  font-size: 5em;
+}
+
+.banner .box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35%;
+  min-height: 100vh;
+  background-color: #a92324;
+}
+
+.banner .figure {
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(#a923236b, #a9232386), url("../img/386762.jpg");
+  background-position: center center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+.banner .figure2 {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("../img/2989960.jpg");
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.player .jumbotron {
+  position: relative;
+  z-index: 8;
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+}
+
+.player {
+  position: relative;
+}
+
+.player .jumbotron::before {
+  content: "";
+  width: 150%;
+  height: 50vh;
+  position: absolute;
+  bottom: 0%;
+  left: -8%;
+  background: linear-gradient(#a92324, #6c221f);
+  z-index: -1;
+  transform: rotate(9deg);
+}
+
+.player .text {
+  z-index: 10;
+  width: 50%;
+}
+
+.player img {
+  position: absolute;
+  top: 10%;
+  right: 12%;
+  width: 30%;
+}
+
+.player .jumbotron::after {
+  content: "THOUNSAND SUNNYSHIP";
+  width: 50%;
+  line-height: 110px;
+  font-size: 9em;
+  position: absolute;
+  top: 26%;
+  right: 3%;
+  color: #f0f0f1;
+  font-weight: 700;
+  letter-spacing: -10px;
+  z-index: -2;
+}
+
+.boxs .more {
+  padding: 5px 25px;
+  border-radius: 10px;
+  border: none;
+}
+
+.boxs h2 {
+  font-weight: 700;
+}
+.player .leg {
+  position: relative;
+}
+
+.player .leg-red {
+  color: #a92324;
+}
+.player .leg::before {
+  content: "";
+  width: 100%;
+  height: 20px;
+  background-color: #f1aa2f;
+  position: absolute;
+  bottom: 24%;
+  left: 7%;
+  z-index: -1;
+}
+
+.player p {
+  color: #fff;
+}
+
+.player h1 {
+  font-weight: 700;
+  line-height: 70px;
+  font-size: 5em;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.arrow .back {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px 15px;
+  border: 4px solid #fff;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.quote .jumbotron {
+  position: relative;
+  z-index: 6;
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+}
